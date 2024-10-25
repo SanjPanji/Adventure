@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="../css/stlyle.css">
+</head>
+<body>
+    <header>
+   <div class="container-head">
+    <img src="../images/leaf1.svg" alt="leaf1" class="leaf-1">
+    <h1 class="Adventure">Adventure</h1>
+    <img src="../images/leaf2.svg" alt="leaf2" class="leaf-2">
+    
+   </div>
+
+    </header>
+
+    <section>
+        <div class="categories">
+            <div class="container">
+            <span class="scroll-content">
+            <a href="" class="scroll-item">
+                <img src="../images/ScrollBar/museum 1.svg" alt="museum" class="scroll-img">
+                <p class="scroll-title">музеи</p>
+            </a>
+            <a href="" class="scroll-item">
+                <img src="../images/ScrollBar/microfon 1.svg" alt="museum" class="scroll-img">
+                <p class="scroll-title">концерты</p>
+            <a href="" class="scroll-item">
+                <img src="../images/ScrollBar/park 1.svg" alt="museum" class="scroll-img">
+                <p class="scroll-title">парки</p>
+            <a href="" class="scroll-item">
+                <img src="../images/ScrollBar/run 1.svg" alt="museum" class="scroll-img">
+                <p class="scroll-title">спорт</p>
+            </a>
+            <a href="" class="scroll-item">
+                <img src="../images/ScrollBar/Vector (1).svg" alt="museum" class="scroll-img">
+                <p class="scroll-title">кино</p>
+            </a>
+            </span>
+        </div>
+        </div>
+    </section>
+        <section>
+        <div class="main-block">
+            <div class="search-bar">
+                <input type="search" placeholder="Поиск...">
+                <button class="btn-filter" onclick="MenuFilter()">
+                    <img src="../images/filtres.svg" alt="filters">
+                </button>
+            </div>
+            <div class="filters" id="Filters" style="display: none" onclick="FilterMenu()">
+                <h2 class="filters-price">Стоимость</h2>
+                <div class="filters-price-row">
+                    <button class="price" onclick="toggleGlow(this)">
+                        <h3 class="prices">&#8376</h3>
+                    </button>
+                    <button class="price" onclick="toggleGlow(this)">
+                        <h3 class="prices">&#8376&#8376</h3>
+                    </button>
+                    <button class="price" onclick="toggleGlow(this)">
+                        <h3 class="prices">&#8376&#8376&#8376</h3>
+                    </button>
+                    <div class="price-checkbox">
+                    <button class="price-box" onclick="toggleGlow(this)"></button>
+                        <h3 class="prices">Бесплатно</h3>
+                </div>
+                </div>
+                <h2 class="filters-date">Даты</h2>
+                    <div class="filters-date-row">
+                        <button class="filters-dates" onclick="toggleGlow(this)">
+                            <h5 class="filters-date-No">24.08</h5>
+                        </button>
+                        <button class="filters-dates" onclick="toggleGlow(this)">
+                            <h5 class="filters-date-No">12.12</h5>
+                        </button>
+                        <button class="filters-dates" onclick="toggleGlow(this)">
+                            <h5 class="filters-date-No">22.09</h5>
+                        </button>
+                        <button class="filters-dates" onclick="toggleGlow(this)">
+                            <h5 class="filters-date-No">11/9</h5>
+                        </button>
+                        <button class="filters-dates" onclick="toggleGlow(this)">
+                            <h5 class="filters-date-No">11/09</h5>
+                        </button>
+                    </div>
+                    <div class="filters-clear-search">
+                        <button class="filters-clear">
+                            Сброс
+                        </button>
+                        <button class="filters-search">
+                            Поиск
+                        </button>
+                    </div>
+            </div>
+            <div class="weather">
+                <img src="../images/Weather/Солнечно 1.svg" alt="" class="weather-img">
+            </div>
+                <div class="event-gl"><h1 class="Events">Ивенты</h1></div>
+                <div class="event-row">
+                    <a href="" class="event-item">
+                        <img src="../images/event-item1.png" alt="event-item1" class="event-img">
+                        <h5 class="event-title">cafe</h5>
+                        <h4 class="event-name">life Grill cafe</h4>
+                    </a>
+                    <a href="" class="event-item">
+                        <img src="../images/event-item1.png" alt="event-item1" class="event-img">
+                        <h5 class="event-title">cafe</h5>
+                        <h4 class="event-name">life Grill cafe</h4>
+                    </a>
+                    <a href="" class="event-item">
+                        <img src="../images/event-item1.png" alt="event-item1" class="event-img">
+                        <h5 class="event-title">cafe</h5>
+                        <h4 class="event-name">life Grill cafe</h4>
+                    </a>
+                    <a href="" class="event-item">
+                        <img src="../images/event-item1.png" alt="event-item1" class="event-img">
+                        <h5 class="event-title">cafe</h5>
+                        <h4 class="event-name">life Grill cafe</h4>
+                    </a>
+                </div>
+        </div>
+        </section>
+    <footer>
+        <div class="footer">
+        <a href="" class="footer-call">
+            <img src="../images/иконки_home 1.svg" alt="" class="footer-img">
+        </a>
+        <a href="" class="footer-home">
+            <img src="../images/image (1).svg" alt="" class="footer-img">
+        </a>
+        <a href="" class="footer-profile">
+            <img src="../images/image 3 (2).svg" alt="" class="footer-img">
+        </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
