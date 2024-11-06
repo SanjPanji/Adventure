@@ -1,0 +1,222 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="../css/stlyle.css">
+</head>
+<body>
+    <header>
+   <div class="container-head">
+    <img src="../images/leaf1.svg" alt="leaf1" class="leaf-1">
+    <h1 class="Adventure">Adventure</h1>
+    <img src="../images/leaf2.svg" alt="leaf2" class="leaf-2">
+    
+   </div>
+
+    </header>
+
+    <section>
+        <div class="categories">
+            <div class="container">
+            <span class="scroll-content">
+            <a href="" class="scroll-item">
+                <img src="../images/ScrollBar/museum 1.svg" alt="museum" class="scroll-img">
+                <p class="scroll-title">музеи</p>
+            </a>
+            <a href="" class="scroll-item">
+                <img src="../images/ScrollBar/microfon 1.svg" alt="museum" class="scroll-img">
+                <p class="scroll-title">концерты</p>
+            <a href="" class="scroll-item">
+                <img src="../images/ScrollBar/park 1.svg" alt="museum" class="scroll-img">
+                <p class="scroll-title">парки</p>
+            <a href="" class="scroll-item">
+                <img src="../images/ScrollBar/run 1.svg" alt="museum" class="scroll-img">
+                <p class="scroll-title">спорт</p>
+            </a>
+            <a href="" class="scroll-item">
+                <img src="../images/ScrollBar/Vector (1).svg" alt="museum" class="scroll-img">
+                <p class="scroll-title">кино</p>
+            </a>
+            </span>
+        </div>
+        </div>
+    </section>
+        <section>
+        <div class="main-block">
+            <div id="leaves-container"></div>
+            <div class="search-bar">
+                <input type="search" placeholder="Поиск...">
+                <button class="btn-filter" onclick="MenuFilter()">
+                    <img src="../images/filtres.svg" alt="filters">
+                </button>
+            </div>
+            <div class="filters" id="Filters" style="display: none" onclick="FilterMenu()">
+                <h2 class="filters-price">Стоимость</h2>
+                <div class="filters-price-row">
+                    <button class="price" onclick="toggleGlow(this)">
+                        <h3 class="prices">&#8376</h3>
+                    </button>
+                    <button class="price" onclick="toggleGlow(this)">
+                        <h3 class="prices">&#8376&#8376</h3>
+                    </button>
+                    <button class="price" onclick="toggleGlow(this)">
+                        <h3 class="prices">&#8376&#8376&#8376</h3>
+                    </button>
+                    <div class="price-checkbox">
+                    <button class="price-box" onclick="toggleGlow(this)"></button>
+                        <h3 class="prices">Бесплатно</h3>
+                </div>
+                </div>
+                <h2 class="filters-date">Даты</h2>
+                    <div class="filters-date-row">
+                        <button class="filters-dates" onclick="toggleGlow(this)">
+                            <h5 class="filters-date-No">24.08</h5>
+                        </button>
+                        <button class="filters-dates" onclick="toggleGlow(this)">
+                            <h5 class="filters-date-No">12.12</h5>
+                        </button>
+                        <button class="filters-dates" onclick="toggleGlow(this)">
+                            <h5 class="filters-date-No">22.09</h5>
+                        </button>
+                        <button class="filters-dates" onclick="toggleGlow(this)">
+                            <h5 class="filters-date-No">11/9</h5>
+                        </button>
+                        <button class="filters-dates" onclick="toggleGlow(this)">
+                            <h5 class="filters-date-No">11/09</h5>
+                        </button>
+                    </div>
+                    <div class="filters-clear-search">
+                        <button class="filters-clear">
+                            Сброс
+                        </button>
+                        <button class="filters-search">
+                            Поиск
+                        </button>
+                    </div>
+            </div>
+            <div class="weather">
+                <img src="../images/Weather/Солнечно 1.svg" alt="" class="weather-img">
+            </div>
+                <div class="event-gl"><h1 class="Events">Ивенты</h1></div>
+                <div class="event-row">
+                    <a href="" class="event-item">
+                        <img src="../images/event-item1.png" alt="event-item1" class="event-img">
+                        <h5 class="event-title">cafe</h5>
+                        <h4 class="event-name">life Grill cafe</h4>
+                    </a>
+                    <a href="" class="event-item">
+                        <img src="../images/event-item1.png" alt="event-item1" class="event-img">
+                        <h5 class="event-title">cafe</h5>
+                        <h4 class="event-name">life Grill cafe</h4>
+                    </a>
+                    <a href="" class="event-item">
+                        <img src="../images/event-item1.png" alt="event-item1" class="event-img">
+                        <h5 class="event-title">cafe</h5>
+                        <h4 class="event-name">life Grill cafe</h4>
+                    </a>
+                    <a href="" class="event-item">
+                        <img src="../images/event-item1.png" alt="event-item1" class="event-img">
+                        <h5 class="event-title">cafe</h5>
+                        <h4 class="event-name">life Grill cafe</h4>
+                    </a>
+                </div>
+        </div>
+        </section>
+    <footer>
+        <div class="footer">
+        <a href="" class="footer-call">
+            <img src="../images/иконки_home 1.svg" alt="" class="footer-img">
+        </a>
+        <a href="" class="footer-home">
+            <img src="../images/image (1).svg" alt="" class="footer-img">
+        </a>
+        <a href="" class="footer-profile">
+            <img src="../images/image 3 (2).svg" alt="" class="footer-img">
+        </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <style>
+    .weather-img {
+        z-index: 1;
+    }
+        #leaves-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none; /* Позволяет взаимодействовать с элементами под контейнером */
+  z-index: 0; /* Низкий z-index для размещения позади других объектов */
+}
+
+.leaf {
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  background-color: green;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Овальная форма */
+  opacity: 0.8;
+  transform: rotate(45deg);
+}
+
+.leaf::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px; /* Толщина прожилки */
+  height: 100%;
+  background-color: black; /* Цвет прожилки */
+  transform: translateX(-50%); /* Центровка по горизонтали */
+  opacity: 0.6; /* Легкая прозрачность для реализма */
+}
+.main-block {
+    position: relative;
+}
+       </style>  
+       <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const leavesContainer = document.getElementById("leaves-container");
+      
+          function createLeaf() {
+            const leaf = document.createElement("div");
+            leaf.classList.add("leaf");
+            leaf.style.left = Math.random() * 100 + "vw"; // Случайное положение по ширине
+            leaf.style.top = "190px"; // Стартовое положение над экраном
+            leavesContainer.appendChild(leaf);
+      
+            // Анимация падения листочков
+            anime({
+              targets: leaf,
+              translateY: [0, window.innerHeight + 30], // Падает за пределы экрана
+              translateX: {
+                value: () => Math.random() * 50 - 25, // Легкое покачивание влево-вправо
+                duration: 2000,
+                easing: "easeInOutSine"
+              },
+              rotate: {
+                value: () => Math.random() * 360,
+                duration: 3000,
+                easing: "easeInOutSine"
+              },
+              duration: 5000 + Math.random() * 3000, // Разная длительность падения
+              easing: "linear",
+              opacity: [1, 0], // Плавное исчезновение
+              complete: function () {
+                leaf.remove(); // Удаляем листочек после анимации
+              }
+            });
+          }
+      
+          // Создаем листочки каждые 500 мс
+          setInterval(createLeaf, 500);
+        });
+      </script>
+      
+</body>
+</html>
